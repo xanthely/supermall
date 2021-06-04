@@ -1,17 +1,14 @@
 <template>
   <div class="top">
-    <h3 style="text-align: center">supermall</h3>
-    <div class="message">
-      <img src="~assets/img/profile/avatar.svg">
-      <div class="login">
-        <p>登录/注册</p>
-        <div class="text">
-          <!-- <img src="~assets/img/profile/phone.svg"> -->
-          <p>暂无绑定的手机号</p>
-        </div>
+    <img src="~assets/img/profile/avatar.svg">
+    <div class="login">
+      <p>登录/注册</p>
+      <div class="text">
+        <!-- <img src="~assets/img/profile/phone.svg"> -->
+        <p>暂无绑定的手机号</p>
       </div>
-      <p> > </p>
     </div>
+    <p> > </p>
   </div>
 </template>
 
@@ -29,14 +26,10 @@ export default {
     padding-right: 15px;
     color: white;
     background: var(--color-tint);
-  }
-
-  .message {
-    padding-top: 20px;
     display: flex;
     align-items: center;
   }
-  .message img {
+  .top img {
     width:70px;
     height:70px;
     padding-right: 5px;

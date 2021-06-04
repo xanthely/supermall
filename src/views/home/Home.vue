@@ -165,7 +165,8 @@ export default {
 .home-nav {
   background-color: var(--color-tint);
   color:white;
-
+  font-weight: bold;
+  
 /* 在使用浏览器原生滚动时使用，为了让导航不跟着一起滚动 */
   /* position: fixed;
   left:0;

@@ -1,5 +1,6 @@
 <template>
   <div class="profile">
+    <nav-bar class="pro-nav"><div slot="center">SuperMall</div></nav-bar>
     <top/>
     <mine/>
     <div class="main">
@@ -29,21 +30,28 @@
 </template>
 
 <script>
-import Mine from './chileComps/Mine'
-import Top from './chileComps/Top'
-import ListView from './chileComps/ListView'
+import Mine from './childComps/Mine'
+import Top from './childComps/Top'
+import ListView from './childComps/ListView'
+import NavBar from 'components/common/navbar/NavBar.vue'
 
 export default {
   name: "Profile",
   components: {
     Top,
     Mine,
-    ListView
+    ListView,
+    NavBar
   }
 }
 </script>
 
 <style scoped>
+  .pro-nav {
+    background-color: var(--color-tint);
+    color:white;
+    font-weight: bold;
+  }
   .main {
     border-bottom: 13px solid #1111;
   }
